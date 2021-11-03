@@ -1,0 +1,29 @@
+
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzeWFocnVsIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2MzU4NTg4MjIsImV4cCI6MTYzNTg1ODg0Mn0.meTIbgaXrzURZ6NnDQJ4KltX1mZPfll-nJt8HKH3axI
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Syahrul2",
+    "email": "email2@gmail.com",
+    "password": "123456",
+    "confPassword": "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+
+###
+GET  http://localhost:5000/token 
+
+###
+DELETE http://localhost:5000/logout 
