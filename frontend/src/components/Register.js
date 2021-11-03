@@ -1,12 +1,8 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
 const Register = () => {
-  // eslint-disable-next-line no-unused-vars
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
