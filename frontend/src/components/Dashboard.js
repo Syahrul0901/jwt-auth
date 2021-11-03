@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-template-curly-in-string */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
@@ -19,7 +20,7 @@ const Dashboard = () => {
   const refreshToken = async () => {
     try {
       const response = await axios.get('http://localhost:5000/token');
-      settToken(response.data.accessToken);
+      setToken(response.data.accessToken);
       const decoded = jwt_decode(response.data.accessToken);
       setName(decoded.name);
       setExpire(decoded.exp);
@@ -42,7 +43,7 @@ const Dashboard = () => {
   return (
     <div className="container mt-5">
       <h1>Welcome Back: {name}</h1>
-      <button oneClick={getUsers} className="button is-info">
+      <button onClick={getUsers} className="button is-info">
         Get Users
       </button>
     </div>
