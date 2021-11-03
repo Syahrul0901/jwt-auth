@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
@@ -17,7 +18,7 @@ const Register = () => {
         name: name,
         email: email,
         password: password,
-        confpassword: confpassword,
+        confPassword: confpassword,
       });
       history.push('/');
     } catch (error) {
@@ -56,7 +57,7 @@ const Register = () => {
                 <div className="field mt-5">
                   <label className="label">Confirm Password</label>
                   <div className="controls">
-                    <input type="password" className="input" placeholder="******" value={confpassword} onChange={(e) => setConfPassword(e.target.value)} />
+                    <input type="confpassword" className="input" placeholder="******" value={confpassword} onChange={(e) => setConfPassword(e.target.value)} />
                   </div>
                 </div>
                 <div className="field mt-5">
