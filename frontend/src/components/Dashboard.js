@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom';
 
 const Dashboard = () => {
   const [name, setName] = useState('');
-  const [token, settToken] = useState('');
+  const [token, setToken] = useState('');
   const [expire, setExpire] = useState('');
   const history = useHistory();
 
