@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Register = () => {
   return (
     <section className="hero has-background-grey-light is-fullheight is-fullwidth">
